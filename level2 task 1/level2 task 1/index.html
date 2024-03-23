@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slideshow</title>
+  <style>
+    /* Styles for the slideshow container */
+    .slideshow-container {
+      max-width: 500px; /* Adjust max-width as needed */
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide all slides by default */
+    .slideshow-container .slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+    }
+
+    /* Show first slide initially */
+    .slideshow-container .slide:first-child {
+      display: block;
+    }
+
+    /* CSS animation for fading between slides */
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Apply animation to slides */
+    .slideshow-container .slide {
+      animation: fade 4s infinite;
+    }
+  </style>
+</head>
+<body>
+  <h1 align="center">Image slideshow</h1>
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 1">
+    </div>
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 2">
+    </div>
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+    </div>
+    <!-- Add more slides as needed -->
+  </div>
+</body>
+</html>
